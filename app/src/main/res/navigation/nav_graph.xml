@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/listFragment">
+
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="com.mendelu.fbe.exam.ListFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_list">
+
+        <action
+            android:id="@+id/action_list_to_add_ride"
+            app:destination="@id/addRideFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addRideFragment"
+        android:name="com.mendelu.fbe.exam.AddRideFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_add_ride">
+        <argument
+            android:name="id"
+            app:argType="long"
+            android:defaultValue="-1L"/>
+    </fragment>
+</navigation>

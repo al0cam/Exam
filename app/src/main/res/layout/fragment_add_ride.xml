@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddRideFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/price"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="numberDecimal"
+            android:hint="Price of the ride"
+            />
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/rangeInKm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="numberDecimal"
+            android:hint="Range in KM"
+            />
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/startLat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="numberDecimal"
+            android:hint="starting latitude"
+            />
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/StartLong"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="numberDecimal"
+            android:hint="Starting longitude"
+            />
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/endLat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="numberDecimal"
+            android:hint="Ending latitude"
+            />
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/endLong"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="numberDecimal"
+            android:hint="Ending longitude"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/saveRide"
+
+            android:text="save"/>
+    </LinearLayout>
+
+</FrameLayout>
